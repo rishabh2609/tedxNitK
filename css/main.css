@@ -9,10 +9,41 @@ body, html {
 	padding: 0px;
 	font-family: roboto;
 }
+.navbar {
+    background-color: #122C3B;
+    z-index: 9999;
+    border: 0;
+    padding: 20px 0px; 
+}
+#myNavbar > ul > li {
+	margin-right: 20px;
+}
+#myNavbar > ul > li > a {
+	color: #ffffff;
+	border: 0px solid #ffffff;
+}
+#myNavbar > ul > li > a:hover {
+	border-bottom-width: 2.5px;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+.btn-reg {
+	border: 1px solid #ffffff;
+	background: transparent;
+	color: #ffffff;
+	padding: 10px 10px;
+	transition: all 0.3s ease;
+}
+.btn-reg:hover {
+	background: #ffffff;
+	color: #122C3B;
+}
 #home {
 	margin: 0px;
 	padding: 0px;
-	background: #000066;
+	background: #122C3B;
 	width: 100%;
 	min-height: 100vh;
 	color: #ffffff;
@@ -34,7 +65,6 @@ body, html {
 	padding: 10px 10px;
 	font-weight: lighter;
 	color: rgb(210, 210, 210);
-	width: 1% !important;
 }
 #date {
 	border: 0px solid rgb(210, 210, 210);
@@ -47,4 +77,44 @@ body, html {
 	border: 0px solid #ffffff;
 	border-top-width: 1px;
 	border-bottom-width: 1px;
+}
+@media only screen and (max-width:768px) {
+	#home {
+		padding: 12% 50px;
+	}
+	.info > * {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	#time-left {
+		width: 30%;
+	}
+}
+@media only screen and (max-width:550px) {
+	#time-left {
+		width: 35%;
+	}
+}
+@media only screen and (max-width:470px) {
+   	#home {
+   		padding: 20% 20px;
+   	}
+   	.info {
+   		text-align: center;
+   		font-size: 2rem;
+   	}
+   	#home > .info > ul > li {
+   		display: block;
+   	}
+   	#date {
+   		border: 0px;
+   	}
+   	.info > * {
+   		margin-top: 20px;
+   		margin-bottom: 20px;
+   	}
+    #time-left {
+    	text-align: center;
+    	width: 100%;
+    }
 }
