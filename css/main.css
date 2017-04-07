@@ -44,93 +44,38 @@ body, html {
 }
 #home {
 	margin: 0px;
-	padding: 0px;
 	background: #122C3B;
 	width: 100%;
+	font-size: 2rem;
 	min-height: 100vh;
 	color: #ffffff;
-	padding: 7.5% 100px;
-	background-image: url(back.png);
-	background-position: center middle;
-	background-size: cover;
-	background-repeat: no-repeat;
+	padding: 150px 100px;
 }
-.info > * {
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-#home > .info > ul {
-	list-style-type: none;
-	padding: 0px;
-}
-#home > .info >  ul > li {
-	display: inline;
-}
-#date, #venue {
-	font-size: 2.5rem;
-	padding: 10px 10px;
-	font-weight: lighter;
-	color: rgb(210, 210, 210);
-}
-#date {
-	border: 0px solid rgb(210, 210, 210);
-	border-right-width: 1px;
+#venue {
+	padding-top: 12px;
 }
 #time-left {
-	text-align: center;
-	width: 20%;
 	padding: 10px 10px;
 	border: 0px solid #ffffff;
-	border-top-width: 1px;
 	border-bottom-width: 1px;
+	border-top-width: 1px;
+	width: 60%;
+	font-size: 3rem;
+	text-align: center;
 }
-@media only screen and (max-width:768px) {
-	#home {
-		padding: 25% 50px;
-	}
-	.info > * {
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
+@media only screen and (max-width:769px) {
 	#time-left {
-		width: 30%;
+		width: 60%;
 	}
-	.navbar {
-		padding: 10px 0px;
-	}
-	#myNavbar > ul {
+	#myNavbar > ul > li {
 		text-align: center;
-	}
-	.info {
-   		text-align: center;
-   		font-size: 2rem;
-   	}
-   	#home > .info > ul > li {
-   		display: block;
-   	}
-   	#date {
-   		border: 0px;
-   	}
-   	.info > * {
-   		margin-top: 20px;
-   		margin-bottom: 20px;
-   	}
-    #time-left {
-    	text-align: center;
-    	width: 100%;
-    }
-}
-@media only screen and (max-width:550px) {
-	#time-left {
-		width: 35%;
 	}
 }
 @media only screen and (max-width:470px) {
-   	#home {
-   		padding: 30% 20px;
-   	}
-   	#time-left {
-    	text-align: center;
-    	width: 100%;
-    }
+	#time-left {
+		width: 100%;
+	}
+	#home {
+		padding: 150px 50px;
+	}
 }
