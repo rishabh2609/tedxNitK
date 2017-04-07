@@ -8,6 +8,7 @@ body, html {
 	margin: 0px;
 	padding: 0px;
 	font-family: roboto;
+	background: #122C3B;
 }
 .navbar {
     background-color: #122C3B;
@@ -21,6 +22,7 @@ body, html {
 #myNavbar > ul > li > a {
 	color: #ffffff;
 	border: 0px solid #ffffff;
+	transition: all 0.1s ease;
 }
 #myNavbar > ul > li > a:hover {
 	border-bottom-width: 2.5px;
@@ -33,7 +35,7 @@ body, html {
 	border: 1px solid #ffffff;
 	background: transparent;
 	color: #ffffff;
-	padding: 10px 10px;
+	padding: 10px 25px;
 	transition: all 0.3s ease;
 }
 .btn-reg:hover {
@@ -48,6 +50,10 @@ body, html {
 	min-height: 100vh;
 	color: #ffffff;
 	padding: 7.5% 100px;
+	background-image: url(back.png);
+	background-position: center middle;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .info > * {
 	margin-top: 40px;
@@ -80,7 +86,7 @@ body, html {
 }
 @media only screen and (max-width:768px) {
 	#home {
-		padding: 12% 50px;
+		padding: 25% 50px;
 	}
 	.info > * {
 		margin-top: 30px;
@@ -89,17 +95,13 @@ body, html {
 	#time-left {
 		width: 30%;
 	}
-}
-@media only screen and (max-width:550px) {
-	#time-left {
-		width: 35%;
+	.navbar {
+		padding: 10px 0px;
 	}
-}
-@media only screen and (max-width:470px) {
-   	#home {
-   		padding: 20% 20px;
-   	}
-   	.info {
+	#myNavbar > ul {
+		text-align: center;
+	}
+	.info {
    		text-align: center;
    		font-size: 2rem;
    	}
@@ -114,6 +116,20 @@ body, html {
    		margin-bottom: 20px;
    	}
     #time-left {
+    	text-align: center;
+    	width: 100%;
+    }
+}
+@media only screen and (max-width:550px) {
+	#time-left {
+		width: 35%;
+	}
+}
+@media only screen and (max-width:470px) {
+   	#home {
+   		padding: 30% 20px;
+   	}
+   	#time-left {
     	text-align: center;
     	width: 100%;
     }
